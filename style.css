@@ -1,3 +1,8 @@
+.container {
+	margin-left: 15px;
+	margin-top: -35px;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -50,10 +55,13 @@ body {
 }
 
 .image.not-selected {
-	opacity: 0.5;
+	filter: brightness(50%);
 }
 
 .info-pane {
+	position: absolute;
+	right: 250px;
+	top: 225px;
 	height: 400px;
 	background: black;
 	margin: 0px;
@@ -63,10 +71,10 @@ body {
 .info-pane .preview-image {
 	background: white;
 	background-size: cover;
-	background-position: 50% 50%;
+	background-position: 75% 75%;
 }
 
 .info-pane .preview-text {
-	padding-left: 20px;
+	text-align: center;
 	color: white;
 }
